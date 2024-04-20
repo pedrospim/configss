@@ -1,7 +1,7 @@
 {
   // supported exchanges: [kucoin, okx, bybit, binance, bitget]
   user: bybit_doge
-  twe_long: 2.0
+  twe_long: 1.5
   twe_short: 0
   n_longs: 5
   n_shorts: 0
