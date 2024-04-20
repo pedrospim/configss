@@ -224,7 +224,7 @@ async def optimize(symbols):
     lista_symboli = []
     for sym in symbols:
         lista_symboli.append(sym)
-    subprocess.run(["python3", "optimize.py", "-u", "bybit_doge", "-s", ",".join(lista_symboli), "--start_date", formated_date, "--end_date", "now", "-ser"])
+    subprocess.run(["python3", "optimize.py", "-u", "bybit_01", "-s", ",".join(lista_symboli), "--start_date", formated_date, "--end_date", "now", "-ser"])
 
 
 
@@ -457,8 +457,8 @@ async def dump_yaml(cc, config):
     subprocess.run(["python3", "tools/extract_best_configs.py", "results_particle_swarm_optimization_recursive_grid"])
     subprocess.run(["rm", "-rf", "results_particle_swarm_optimization_recursive_grid"])
     subprocess.run(["screen", "-X", "-S", "new_forager", "quit"])
-    #subprocess.Popen(["sudo", "screen", "-S", "new_forager", "bash", "-c", "'python3", "passivbot_multi.py", "-le", "y", "-se", "n", "-u", "bybit_doge", "-s", lista_symboli_str, "'", "configs/live/multi_forager.hjson"])
-    command = f"sudo screen -S new_forager bash -c 'python3 passivbot_multi.py -le y -se n -u bybit_doge -s {lista_symboli_str} configs/live/multi_forager.hjson'"
+    #subprocess.Popen(["sudo", "screen", "-S", "new_forager", "bash", "-c", "'python3", "passivbot_multi.py", "-le", "y", "-se", "n", "-u", "bybit_01", "-s", lista_symboli_str, "'", "configs/live/multi_forager.hjson"])
+    command = f"sudo screen -S new_forager bash -c 'python3 passivbot_multi.py -le y -se n -u bybit_01 -s {lista_symboli_str} configs/live/multi_forager.hjson'"
     subprocess.Popen(command, shell=True)
     
     
