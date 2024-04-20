@@ -30,8 +30,8 @@
   auto_gs: true
 
   // total wallet exposure limits long and short. Exposure limit for each bot will be TWE_pos_side / len(active_symbols_pos_side)
-  TWE_long: 2.3
-  TWE_short: 0.1
+  TWE_long: 1.5
+  TWE_short: 0.0
 
   // if true, mode defaults to 'normal'. If false, mode defaults to 'graceful_stop' if auto_gs=true, else 'manual'.
   long_enabled: true
